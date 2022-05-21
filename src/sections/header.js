@@ -4,7 +4,7 @@ import { Fragment } from 'react';
 
 export default function Header() {
   return (
-    <div className='bg-gray-900'>
+    <div className='bg-transparent'>
       <Disclosure as="nav">
       {({ open }) => (
         <>
@@ -20,7 +20,7 @@ export default function Header() {
                         key={item.name}
                         href={item.href}
                         className={classNames(
-                          item.current ? 'text-blue-400' : '  text-gray-100 hover:border-sky-500 hover:text-emerald-400 transition-colors duration-300 ease-in-out',
+                          item.current ? 'text-gray-900' : '  text-white hover:border-sky-500 hover:text-gray-900 transition-colors duration-300 ease-in-out',
                           'px-4 py-3 rounded-sm text-md font-medium'
                         )}
                         aria-current={item.current ? 'page' : undefined}
