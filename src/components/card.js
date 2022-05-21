@@ -1,9 +1,10 @@
 import * as React from 'react';
 import Chip from '@mui/material/Chip';
 import Stack from '@mui/material/Stack';
-import { CloudCircleOutlined, CloudSharp, Code } from '@mui/icons-material';
+import { CloudCircleOutlined, CloudCircleSharp, CloudDownloadTwoTone, CloudSharp, Code, TerminalRounded } from '@mui/icons-material';
 import { createTheme } from '@mui/material/styles';
 import { ThemeProvider } from '@emotion/react';
+import { TerminalIcon } from '@heroicons/react/outline';
 
 const theme = createTheme({
   status: {
@@ -16,7 +17,7 @@ const theme = createTheme({
     },
     neutral: {
       main: '#28fc96',
-      contrastText: '#fff',
+      contrastText: '#212121',
     },
     secondary: {
       main: "#38fce9",
@@ -30,26 +31,28 @@ const cloud = ["Docker", "Heroku", "Terraform", "AWS/Azure", "Linux Shell", "Git
 
 export default function ColorChips() {
   return (
+    <div className="z-0 max-w-6xl mx-auto md:pl-16">
     <ThemeProvider theme={theme}>
-    <div className="mt-10"> 
+    <div className="items-center mt-10 text-center"> 
       <Stack direction="row" spacing={1}>
-        {langs.map(lang => (<Chip icon={<Code/>} label={lang} color="primary" variant="outlined" />))
+        {langs.map(lang => (<Chip icon={<Code/>} label={lang} color="primary" variant="filled" />))
         }
       </Stack>
     </div>
     <div className="mt-10">
       <Stack direction="row" spacing={1}>
-        {frame.map(fms => (<Chip icon={<CloudCircleOutlined />} color="secondary" label={fms} variant="outlined" />))
+        {frame.map(fms => (<Chip icon={<TerminalRounded />} color="secondary" label={fms} variant="filled" />))
         }
       </Stack>
     </div>
     <div className="mt-10">
       <Stack direction="row" spacing={1}>
-        {cloud.map(clouds => (<Chip icon={<CloudCircleOutlined />} color="neutral" label={clouds} variant="outlined" />))
+        {cloud.map(clouds => (<Chip icon={<CloudCircleSharp />} color="neutral" label={clouds} variant="filled" />))
         }
       </Stack>
     </div>
     
     </ThemeProvider>
+    </div>
   );
 }

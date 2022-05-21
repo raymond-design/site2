@@ -6,7 +6,9 @@ import Skills from './sections/skills';
 function App() {
   return (
     <div>
+      <div className='bg-gradient-to-r from-blue-400 to-emerald-400'>
       <Home />
+      </div>
       <div className='bg-gray-900'>
       <Skills />
       <Projects />
