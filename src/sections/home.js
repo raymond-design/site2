@@ -2,15 +2,16 @@ import React from 'react';
 import Header from '../sections/header';
 import { motion } from "framer-motion";
 import GithubIcon from "../components/icons/Github.js";
-import TwitterIcon from "../components/icons/Twitter.js";
 import LinkedinIcon from "../components/icons/Linkedin.js";
-//medium url: https://medium.com/@raymondyan777
+import MediumIcon from '../components/icons/Medium';
+import EmailIcon from '../components/icons/Email';
+
+import Typing from "../components/typical";
+
 const roles = ["API Developer", "Cloud Computing Expert", "Medical Imaging Researcher", "Technical Writer", "Open Source Contributor"];
 const Home = () => {
   return (
     <div className='bg-gradient-to-r from-blue-400 to-emerald-400'>
-              <Header />
-
       <div className="relative flex items-center h-screen"> 
         <div className="z-0 max-w-6xl mx-auto sm:pl-16">
           <div className="flex justify-center text-center sm:text-left sm:grid sm:grid-cols-12">
@@ -25,6 +26,9 @@ const Home = () => {
                   <h1 className="mt-5 text-xl font-extrabold tracking-normal text-gray-800 uppercase md:text-4xl md:mt-3 dark:text-white">
                     Raymond Yan.
                   </h1>
+                  <div className="mt-5 text-2xl text-transparent bg-gradient-to-r from-pink-500 via-indigo-400 to-purple-700 bg-clip-text md:mt-3">
+                    <Typing />
+                  </div>
                   <div className="flex items-center mt-4 space-x-6 md:mt-6">
               <motion.a
                 href="https://github.com/raymond-design"
@@ -34,18 +38,8 @@ const Home = () => {
                 whileHover={{ scale: 1.1 }}
               >
                 <GithubIcon className={"w-8 h-8 fill-current"} />
-              </motion.a>
-
-              <motion.a
-                href="https://twitter.com/raymondraymoo"
-                target={"_blank"}
-                rel="noopener noreferrer"
-                className="flex items-center justify-center text-gray-800 transition-colors duration-300 dark:text-gray-100 dark:hover:text-pinkish-200 hover:text-pinkish-200"
-                whileHover={{ scale: 1.1 }}
-              >
-                <TwitterIcon className={"w-8 h-8 fill-current"} />
-              </motion.a>
-
+              </motion.a> 
+              
               <motion.a
                 href="https://www.linkedin.com/in/raymond-yan-216b85200/"
                 target={"_blank"}
@@ -54,6 +48,26 @@ const Home = () => {
                 whileHover={{ scale: 1.1 }}
               >
                 <LinkedinIcon className={"w-8 h-8 fill-current"} />
+              </motion.a>
+
+              <motion.a
+                href="https://medium.com/@raymondyan777"
+                target={"_blank"}
+                rel="noopener noreferrer"
+                className="flex items-center justify-center text-gray-800 transition-colors duration-300 dark:text-gray-100 dark:hover:text-pinkish-200 hover:text-pinkish-200"
+                whileHover={{ scale: 1.1 }}
+              >
+                <MediumIcon className={"w-8 h-8 fill-current"} />
+              </motion.a>
+
+              <motion.a
+                href="raymondyan777@gmail.com"
+                target={"_blank"}
+                rel="noopener noreferrer"
+                className="flex items-center justify-center text-gray-800 transition-colors duration-300 dark:text-gray-100 dark:hover:text-pinkish-200 hover:text-pinkish-200"
+                whileHover={{ scale: 1.1 }}
+              >
+                <EmailIcon className={"w-8 h-8 fill-current"} />
               </motion.a>
             </div>
                 </div>
