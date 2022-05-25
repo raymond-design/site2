@@ -74,13 +74,15 @@ export default function Project() {
   })
 
   return (
-    <div className="h-auto bg-blue-dark">
+    <div className="h-auto ">
+      <div className="w-full max-w-md px-2 py-16 text-center sm:px-0">
+      <h1 className="mt-5 text-xl font-extrabold tracking-normal text-gray-800 uppercase md:text-4xl md:mt-3 dark:text-white">
+        Projects
+      </h1>
+    </div>
       <div className="z-0 max-w-6xl mx-auto md:pl-16">
         <div className="h-12" />
         <div className="skills-grid">
-          <h2 className = "text-center md:text-left section-header">
-            {'>'}{' '}getSkills()
-          </h2>
           <Tab.Group>
         <Tab.List className="flex p-1 space-x-1 rounded-xl bg-blue-900/20">
           {Object.keys(categories).map((category) => (

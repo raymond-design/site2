@@ -1,7 +1,10 @@
+import Exp from './sections/exp';
 import Header from './sections/header';
 import Home from './sections/home';
 import Projects from './sections/projects';
 import Skills from './sections/skills';
+import Other from './sections/other';
+import Footer from './sections/footer';
 
 function App() {
   return (
@@ -10,8 +13,14 @@ function App() {
       <Home />
       </div>
       <div className='bg-gray-900'>
+      <Exp /> 
       <Skills />
       <Projects />
+      <Other />
+       
+      </div>
+      <div className='bg-gradient-to-b from-indigo-300 to-purple-400'>
+      <Footer />
       </div>
     </div>
   );

@@ -29,6 +29,12 @@ const Home = () => {
                   <div className="mt-5 text-2xl text-transparent bg-gradient-to-r from-pink-500 via-indigo-400 to-purple-700 bg-clip-text md:mt-3">
                     <Typing />
                   </div>
+                  <div className="flex mx-6 mt-6 text-xl text-white sm:mx-0">
+                <p>
+                  I'm a Computer Science student at Penn State with a passion for architecture and the cloud native ecosystem. 
+                Consider checking out a blog article or two :)
+                </p>
+              </div>
                   <div className="flex items-center mt-4 space-x-6 md:mt-6">
               <motion.a
                 href="https://github.com/raymond-design"
@@ -51,30 +57,21 @@ const Home = () => {
               </motion.a>
 
               <motion.a
-                href="https://medium.com/@raymondyan777"
+                href="https://medium.com/@raymonddesign"
                 target={"_blank"}
                 rel="noopener noreferrer"
                 className="flex items-center justify-center text-gray-800 transition-colors duration-300 dark:text-gray-100 dark:hover:text-pinkish-200 hover:text-pinkish-200"
                 whileHover={{ scale: 1.1 }}
               >
                 <MediumIcon className={"w-8 h-8 fill-current"} />
-              </motion.a>
-
-              <motion.a
-                href="raymondyan777@gmail.com"
-                target={"_blank"}
-                rel="noopener noreferrer"
-                className="flex items-center justify-center text-gray-800 transition-colors duration-300 dark:text-gray-100 dark:hover:text-pinkish-200 hover:text-pinkish-200"
-                whileHover={{ scale: 1.1 }}
-              >
-                <EmailIcon className={"w-8 h-8 fill-current"} />
-              </motion.a>
+              </motion.a> 
             </div>
                 </div>
               </section>
               
             </main>
             </div>
+            
             <div className="pl-10 sm:col-span-5 md:col-span-4"> {/*sm:col-span-10 md:col-span-9 */}
             
             <main className="w-full h-full">
