@@ -31,8 +31,7 @@ const Home = () => {
                   </div>
                   <div className="flex mx-6 mt-6 text-xl text-white sm:mx-0">
                 <p>
-                  I'm a Computer Science student at Penn State with a passion for architecture and the cloud native ecosystem. 
-                Consider checking out a blog article or two :)
+                  I'm a Computer Science student at Penn State with a focus in biomed software and cloud native!
                 </p>
               </div>
                   <div className="flex items-center mt-4 space-x-6 md:mt-6">

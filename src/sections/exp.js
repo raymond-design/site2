@@ -15,8 +15,11 @@ export default function Exp() {
           <Xp
             title = {xp.title}
             time = {xp.time}
+            role = {xp.role} 
             desc = {xp.desc}
+            learned = {xp.learned}
             link = {xp.link}
+            cmpn = {xp.cmpn}
           />
         </div>
       ))}
@@ -26,21 +29,30 @@ export default function Exp() {
 }
 const xpdata = [
   {
-    title: "Data Center Intern @Element Critical",
+    title: "Data Center Intern",
+    cmpn: "Element Critical",
     time: "June 2021 - August 2021",
+    role: "",
     desc: "blah",
+    learned: "",
     link: "https://www.elementcritical.com/",
   },
   {
-    title: "Co-Founder/CTO @UpRads Systems",
-    time: "June 2021 - August 2021",
-    desc: "blah",
-    link: "https://www.elementcritical.com/",
+    title: "Software Dev, Researcher",
+    cmpn: "UpRads Systems",
+    time: "October 2021 - August 2022",
+    role: "",
+    desc: "I got to become familiar with medical imaging standards, open source servers like Orthanc and DCM4CHEE, and the CornerstoneJS ecosystem. This experience is what got me interested in healthcare software.",
+    learned: "",
+    link: "",
   },
   {
-    title: "Training Director, Cloud Specialist @Nittany Data Labs",
-    time: "June 2021 - August 2021",
-    desc: "blah",
-    link: "https://www.elementcritical.com/",
+    title: "Training Director",
+    cmpn: "Nittany Data Labs",
+    time: "May 2022 - Present",
+    role: "",
+    desc: "Nittany Data Labs is Penn State's data science student organization. As training director, I mainly maintain the club learning resources (python packages, GitHub repos, etc) and make sure students get the most out of our training programs (cloud certifications, workshops, etc).",
+    learned: "",
+    link: "https://ndl.psu.edu/",
   }
 ];
