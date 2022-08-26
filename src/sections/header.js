@@ -1,6 +1,6 @@
-import { Disclosure, Menu, Transition } from '@headlessui/react';
-import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline';
-import { Fragment } from 'react';
+import { Disclosure } from '@headlessui/react';
+//import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline';
+//import { Fragment } from 'react';
 
 export default function Header() {
   return (

@@ -1,10 +1,4 @@
-import Exp from './sections/exp';
-import Header from './sections/header';
 import Home from './sections/home';
-import Projects from './sections/projects';
-import Skills from './sections/skills';
-import Other from './sections/other';
-import Footer from './sections/footer';
 
 function App() {
   return (

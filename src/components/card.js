@@ -1,10 +1,9 @@
 import * as React from 'react';
 import Chip from '@mui/material/Chip';
 import Stack from '@mui/material/Stack';
-import { CloudCircleOutlined, CloudCircleSharp, CloudDownloadTwoTone, CloudSharp, Code, TerminalRounded } from '@mui/icons-material';
+import { CloudCircleSharp, Code, TerminalRounded } from '@mui/icons-material';
 import { createTheme } from '@mui/material/styles';
 import { ThemeProvider } from '@emotion/react';
-import { TerminalIcon } from '@heroicons/react/outline';
 
 const theme = createTheme({
   status: {

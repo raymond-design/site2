@@ -1,10 +1,10 @@
 import React from 'react';
-import Header from '../sections/header';
+//import Header from '../sections/header';
 import { motion } from "framer-motion";
 import GithubIcon from "../components/icons/Github.js";
 import LinkedinIcon from "../components/icons/Linkedin.js";
 import MediumIcon from '../components/icons/Medium';
-import EmailIcon from '../components/icons/Email';
+//import EmailIcon from '../components/icons/Email';
 
 import Typing from "../components/typical";
 
