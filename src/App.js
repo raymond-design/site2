@@ -13,14 +13,10 @@ function App() {
       <Home />
       </div>
       <div className='bg-gray-900'>
-      <Exp /> 
-      <Skills />
-      <Projects />
-      <Other />
        
       </div>
       <div className='bg-gradient-to-b from-indigo-300 to-purple-400'>
-      <Footer />
+      
       </div>
     </div>
   );
